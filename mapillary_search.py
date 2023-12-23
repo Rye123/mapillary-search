@@ -186,8 +186,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Extracts images within a given bounding box and date range."
     )
-    parser.add_argument("southwest", type=str, help="South-West Coordinates of the Bounding Box, as latitude, longitude. Example: \"1.3518580962691118, 103.93356798061131\"")
-    parser.add_argument("northeast", type=str, help="North-East Coordinates of the Bounding Box, as latitude, longitude. Example: \"1.3552656368803468, 103.93720991127293\"")
+    parser.add_argument("southwest", type=str, help="South-West Coordinates of the Bounding Box, as latitude, longitude. Example: \"1.3518580962691118,103.93356798061131\"")
+    parser.add_argument("northeast", type=str, help="North-East Coordinates of the Bounding Box, as latitude, longitude. Example: \"1.3552656368803468,103.93720991127293\"")
     parser.add_argument("-l", "--limit", type=int, help="Maximum number of images", default=None)
     parser.add_argument("-d", "--detections", type=str, help="Detections to search for (see https://www.mapillary.com/developer/api-documentation/detections).", default=None)
     args = parser.parse_args()
