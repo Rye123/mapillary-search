@@ -14,6 +14,15 @@ Ensure you are within the `mapillary-search` directory.
 pip install -r requirements.txt
 ```
 
+Next, obtain an **access token** from Mapillary via this link: https://www.mapillary.com/dashboard/developers
+
+Replace **line 8** of `mapillary_search.py` with the **Client Token**:
+```python
+# API Details
+#TODO: Replace API key below
+API_KEY = "MLY|123412341234|123412341234"
+```
+
 ## Usage
 ```commandline
 python3 mapillary_search.py southwest northeast [-l limit] [-d detections]
